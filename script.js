@@ -19,8 +19,8 @@ const pistas = {
   "2025-07-13": "Pista 13: Hoy no hay pista, solo aviso que sabado y domingo hay dos importantes",
   "2025-07-14": "Pista 14: No soy de Arquitectura",
   "2025-07-15": "Aguante River",
-  "2025-07-16": "Pista 16: Me gusta la cena, sobretodo la última",
-  "2025-07-17": "Última pista: Dicen que mi viejo es una paloma"
+  "2025-07-16": "Pista 16: Dicen que mi viejo es una paloma",
+  "2025-07-17": "Última pista: Me gusta la cena, sobretodo la última"
 };
 
 function mostrarCuentaRegresiva() {
