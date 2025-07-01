@@ -23,44 +23,52 @@ const pistas = {
   "2025-07-17": "Última pista: Me gusta la cena, sobretodo la última"
 };
 
-function mostrarCuentaRegresiva() {
+function mostrarPistaYContador() {
   const ahora = new Date();
-  const diferencia = inicioPistas - ahora;
+  const yyyy_mm_dd = ahora.toISOString().split("T")[0];
+
+  // Mostrar pista del día
+  if (yyyy_mm_dd in pistas) {
+    pistaEl.textContent = pistas[yyyy_mm_dd];
+    pistaEl.classList.remove("hidden");
+  } else if (ahora > finPistas) {
+    pistaEl.textContent = "¡Se han revelado todas las pistas! 🎉";
+    pistaEl.classList.remove("hidden");
+    countdownEl.classList.add("hidden");
+    return;
+  } else {
+    pistaEl.textContent = "Aún no hay pista disponible ⏳";
+    pistaEl.classList.remove("hidden");
+  }
+
+  // Calcular fecha de la próxima pista (mañana a las 00:00)
+  let proximoDia = new Date(ahora);
+  proximoDia.setDate(proximoDia.getDate() + 1);
+  proximoDia.setHours(0, 0, 0, 0);
+
+  if (proximoDia <= finPistas) {
+    actualizarCuentaRegresiva(proximoDia);
+    setInterval(() => actualizarCuentaRegresiva(proximoDia), 1000);
+  } else {
+    countdownEl.classList.add("hidden");
+  }
+}
+
+function actualizarCuentaRegresiva(destino) {
+  const ahora = new Date();
+  const diferencia = destino - ahora;
 
   if (diferencia <= 0) {
-    countdownEl.classList.add("hidden");
-    mostrarPista();
+    countdownEl.textContent = "¡Nueva pista disponible!";
     return;
   }
 
-  const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-  const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
-  const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
-  const segundos = Math.floor((diferencia / 1000) % 60);
+  const horas = Math.floor(diferencia / (1000 * 60 * 60));
+  const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+  const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
 
-  countdownEl.textContent = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+  countdownEl.textContent = `Próxima pista en ${horas}h ${minutos}m ${segundos}s`;
 }
 
-function mostrarPista() {
-  const hoy = new Date();
-  const yyyy_mm_dd = hoy.toISOString().split("T")[0];
-
-  if (hoy >= inicioPistas && hoy <= finPistas && pistas[yyyy_mm_dd]) {
-    pistaEl.textContent = pistas[yyyy_mm_dd];
-    pistaEl.classList.remove("hidden");
-  } else if (hoy > finPistas) {
-    pistaEl.textContent = "¡Se han revelado todas las pistas! 🎉";
-    pistaEl.classList.remove("hidden");
-  } else {
-    pistaEl.textContent = "Esperá a que se libere la pista de hoy... ⏳";
-    pistaEl.classList.remove("hidden");
-  }
-}
-
-const ahora = new Date();
-if (ahora < inicioPistas) {
-  mostrarCuentaRegresiva();
-  setInterval(mostrarCuentaRegresiva, 1000);
-} else {
-  mostrarPista();
-}
+// Ejecutar
+mostrarPistaYContador();
