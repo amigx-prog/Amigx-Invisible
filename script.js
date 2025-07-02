@@ -8,7 +8,7 @@ const pistas = {
   "2025-07-02": "Segunda pista: Me gusta el mate amargo 🧉",
   "2025-07-03": "Tercera pista: Uso lentes",
   "2025-07-04": "Cuarta pista: Casi siempre estoy escuchando musica",
-  "2025-07-05": "Quinta pista: Hoy es sabado, lindo para hacer un asado al medio dia",
+  "2025-07-05": "Hoy es sabado, no hay pista, pero mañana si.",
   "2025-07-06": "Hoy domingo veras la pista? Lo dudo asique tiro una importante: No soy de rrhh",
   "2025-07-07": "Leiste la pista de ayer? La repito por las dudas, la de ayer decia: No soy ... ",
   "2025-07-08": "Octava pista: Soy Hombre",
