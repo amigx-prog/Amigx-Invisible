@@ -6,7 +6,7 @@ const pistaEl = document.getElementById("pista");
 const pistas = {
   "2025-07-01": "No voy a hacertela facil al principio, asique solo por ahora te puedo decir que esta web en si, es la primera pista.",
   "2025-07-02": "Segunda pista: Me gusta el mate amargo 🧉",
-  "2025-07-03": "Tercera pista: Uso lentes",
+  "2025-07-03": "Muy bien martincho! La pista extra es: Andar en bici no es lo mio",
   "2025-07-04": "Martiiiiinchooooo esta vez si, para esta pista tenes que ir y decirle a Andre redaccion: Soy martincho y tengo cara de carpincho. Ella ya sabe y te va a dar la pista. Es una importante!",
   "2025-07-05": "Hoy es sabado, no hay pista, pero mañana si.",
   "2025-07-06": "Hoy domingo veras la pista? Lo dudo asique tiro una importante: No soy de rrhh",
