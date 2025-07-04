@@ -8,6 +8,9 @@ body {
   justify-content: center;
   height: 100vh;
 }
+.img{
+  border-radius: 50%;
+}
 h2{
   margin-bottom: 50px;
 }
