@@ -16,7 +16,7 @@ const pistas = {
   "2025-07-10": "Por si no entendiste la primera pista, esta paginita la hice yo, me gusta programar",
   "2025-07-11": "Pista 11: Si quisiera podria ponerle mas onda a esta pagina",
   "2025-07-12": "Pista 12: Por lo general, aparezco los martes y los jueves",
-  "2025-07-13": "Pista 13: Hoy no hay pista, solo aviso que sabado y domingo hay dos importantes",
+  "2025-07-13": "Pista 13: Hoy no hay pista, vuelva prontos",
   "2025-07-14": "Pista 14: No soy de Arquitectura",
   "2025-07-15": "Aguante River",
   "2025-07-16": "Pista 16: Dicen que mi viejo es una paloma",
