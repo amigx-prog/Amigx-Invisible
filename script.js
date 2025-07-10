@@ -13,7 +13,7 @@ const pistas = {
   "2025-07-07": "Leiste la pista de ayer? La repito por las dudas, la de ayer decia: No soy ... ",
   "2025-07-08": "Octava pista: Soy Hombre",
   "2025-07-09": "Se suspenden las pistas por hoy por ser feriado",
-  "2025-07-10": "Por si no entendiste la primera pista, esta paginita la hice yo, no es mi tarea en la empresa pero me gusta programar",
+  "2025-07-10": "Felicitaciones al licenciado",
   "2025-07-11": "Pista 11: Si quisiera tambien podria ponerle mas onda a esta pagina",
   "2025-07-12": "Pista 12: Por lo general, aparezco los martes y los jueves",
   "2025-07-13": "Pista 13: Hoy no hay pista, vuelva prontos",
