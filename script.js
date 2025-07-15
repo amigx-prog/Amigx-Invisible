@@ -18,7 +18,7 @@ const pistas = {
   "2025-07-12": "Pista 12: Por lo general, aparezco los martes y los jueves",
   "2025-07-13": "Pista 13: Hoy no hay pista, vuelva prontos",
   "2025-07-14": "Pista 14: No soy de Arquitectura",
-  "2025-07-15": "Futbolisticamente somos rivales",
+  "2025-07-15": "Futbolisticamente somos rivales y tengo mas de 30años",
   "2025-07-16": "Pista 16: Dicen que mi viejo es una paloma",
   "2025-07-17": "Última pista: Me gusta la cena, sobretodo la última"
 };
